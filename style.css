@@ -1,7 +1,7 @@
 *, :after, :before { box-sizing: border-box; }
 
 :root {
-    --primary-c: #0099B8;
+    --primary-c: #00AACC;
     --secondary-c: #F7F7FF;
     --background-c: #FFF833;
     --body-c: #E0EBF5;
@@ -9,7 +9,7 @@
 body {
     background-color: var(--body-c);
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -34,6 +34,7 @@ body {
     margin: 0;
     border-bottom: 1px solid black;
     background-color: var(--secondary-c);
+    /*box-shadow: 10px 10px 10px rgb(0, 0, 0);*/
 }
 .menu__list {
     display: flex;
@@ -48,11 +49,28 @@ body {
 .footer {
     background-color: var(--primary-c);
     padding: 5px 0;
+
 }
 .footer__text {
     text-align: center;
     color: var(--secondary-c);
 }
-.container {
-    border-bottom: 1px solid black;
+.box {
+    background-color: #F0F5FA;
+    padding: 0 15px;
+    margin-bottom: 5px;
+    border: 1px solid var(--body-c);
+    border-radius: 2px;
+}
+.box__title {
+    font-size: 22px;
+}
+
+@media  screen and (min-width: 750px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
 }
