@@ -17,7 +17,7 @@ body {
 .main {
     background-color: var(--secondary-c);
     margin: 0px 5%;
-    padding: 5px 5%;
+    padding: 50px 5%;
     /*box-shadow: 1px 1px 5px rgb(200, 200, 200);*/
 }
 .header {
@@ -39,10 +39,11 @@ body {
 .menu {
     padding: 5px 5%;
     margin: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgba(90, 90, 90, 0.1);
     background-color: var(--primary-c);
     /*box-shadow: 10px 10px 10px rgb(0, 0, 0);*/
 }
+
 .menu__list {
     margin: 10px 5%;
     display: flex;
@@ -54,6 +55,7 @@ body {
     color: var(--secondary-c);
     text-decoration: none;
 }
+
 .footer {
     background-color: var(--primary-c);
     padding: 5px 0;
@@ -63,13 +65,10 @@ body {
     text-align: center;
     color: var(--secondary-c);
 }
-.container {
-    margin: 10px 0;
-}
 .box {
     background-color: #F0F5FA;
     padding: 0 15px;
-    /*margin: 5px 0px;*/
+    margin-bottom: 5px;
     border: 1px solid var(--body-c);
     border-radius: 2px;
 }
@@ -87,19 +86,27 @@ body {
 .box__align {
     color: black;
 }
+/*a:hover {
+    color:var(--primary-c);
+}*/
 .box__image {
     height: 150px;
     object-fit: cover;
     margin:5px;
 }
+/*.container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+}*/
 
 
 @media  screen and (min-width: 750px) {
-    .container {
+    /*.container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
+        gap: 15px;
+    }*/
     .header__title {
         font-size: 42px;
     }
