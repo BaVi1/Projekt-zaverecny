@@ -63,23 +63,32 @@ body {
     text-align: center;
     color: var(--secondary-c);
 }
+.container {
+    margin: 10px 0;
+}
 .box {
     background-color: #F0F5FA;
     padding: 0 15px;
-    margin-bottom: 5px;
+    /*margin: 5px 0px;*/
     border: 1px solid var(--body-c);
     border-radius: 2px;
 }
 .box__title {
     font-size: 22px;
 }
-/*.box__content {
+.box__content {
     display: flex;
-}*/
-
+    align-items: center;
+}
+.box__icon {
+    height: 35px;
+    margin: 10px 10px 10px 0;
+}
+.box__align {
+    color: black;
+}
 .box__image {
     height: 150px;
-    float: right;
     object-fit: cover;
     margin:5px;
 }
