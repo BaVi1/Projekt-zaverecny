@@ -18,7 +18,6 @@ body {
     background-color: var(--secondary-c);
     margin: 0px 5%;
     padding: 50px 5%;
-
 }
 .header {
     height: 250px;
@@ -84,7 +83,6 @@ body {
     color: var(--secondary-c);
 }
 .box {
-    background-color: #F0F5FA;
     padding: 0 15px;
     margin-bottom: 5px;
     border: 1px solid var(--body-c);
@@ -107,6 +105,11 @@ body {
 }
 .box__align:hover {
     color:var(--primary-c);
+}
+.box__table {
+    text-align: left;
+    border-spacing: 0px;
+    margin-bottom: 5px;
 }
 .container {
     display: grid;
@@ -135,13 +138,14 @@ body {
     margin-bottom: 5px;
 }
 .table__item {
-    border-bottom: 1px solid black;
+    border-top: 1px solid var(--body-c);
     padding: 5px 15px;
+    font-weight: normal;
 }
 .box--center {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 
