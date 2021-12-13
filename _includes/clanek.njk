@@ -2,13 +2,13 @@
 layout: sablona.njk
 ---
 
-<div class="box">
+<div class="box article">
     <h1 class="article__title">{{ title }}</h1>
 
-    <p class="article__meta">Publikováno {{ page.date }}</p>
-
-    <p class="article__perex">perex</p>
+    <p class="article__perex">{{ perex }}</p>
 
     {{ content | safe }}
+
+    <img class="article__image" src="/images/{{ foto }}" alt="{{ alt }}">
 
 </div>
