@@ -1,0 +1,14 @@
+---
+layout: sablona.njk
+---
+
+<div class="box">
+    <h1 class="article__title">{{ title }}</h1>
+
+    <p class="article__meta">Publikováno {{ page.date }}</p>
+
+    <p class="article__perex">perex</p>
+
+    {{ content | safe }}
+
+</div>
